@@ -17,17 +17,6 @@ Descripción: Estilos de la página del listado de elementos de la aplicación w
 /* Importar fonts de Google Fonts.*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
-/* Título de la página. */
-.title_page{
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    line-height: 100px;
-    text-align: center;
-    border-bottom: 2px solid #000;
-}
-
 /* Contenedor principal. */
 #main-container{
     width: 90%;
