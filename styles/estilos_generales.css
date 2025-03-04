@@ -17,6 +17,7 @@ Descripción: Estilos generales de la aplicación web de 2 Hermanos.
 /* Importar fonts de Google Fonts.*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
+/* Configuración general de la página: márgenes, tamaño de caja, color del fondo y el tipo y tamaño de letra por defecto. */
 html, body{
     margin: 0;
     box-sizing: border-box;
@@ -25,6 +26,7 @@ html, body{
     font-size: 18px;
 }
 
+/* Barra de encabezado. */
 #header_bar{
     width: 100%;
     background-color: #002E6E;
@@ -33,6 +35,7 @@ html, body{
     justify-content: space-between;
 }
 
+/* Encabezado con el nombre de la empresa. */
 #header_bar h1{
     margin-left: 105px;
     color: #ffffff;
@@ -40,6 +43,7 @@ html, body{
     font-style: italic;
 }
 
+/* Barra de navegación. */
 #header_bar nav{
     align-self: center;
     position: relative;
@@ -47,6 +51,7 @@ html, body{
     color: #ffffff;
 }
 
+/* Enlaces dentro de la barra de navegación. */
 #header_bar nav a{
     color: #ffffff;
     font-family: 'Figtree', sans-serif;
@@ -55,15 +60,18 @@ html, body{
     margin-right: 4rem;
 }
 
+/* Hover y focus de los enlaces de la barra de navegación. */
 #header_bar nav a:hover, #header_bar nav a:focus{
     text-decoration: underline;
     font-weight: bold;
 }
 
+/* Diseño de enlaces activos en la barra de navegación. */
 #header_bar nav a:active{
     color: #95cdfd;
 }
 
+/* Diseño del botón "Salir". */
 #header_bar nav button{
     color: #004DB9;
     background-color: #ffffff;
@@ -76,35 +84,41 @@ html, body{
     border-radius: 10px;
 }
 
+/* Hover y focus del botón "Salir". */
 #header_bar nav button:hover, #header_bar nav button:focus{
     transition: 0.3s;
     color: #000000;
     background-color: #57B1FF;
 }
 
+/* Diseño de botón "Salir" activo. */
 #header_bar nav button:active{
     transition: 0.00001s;
     color: #000000;
     background-color: #f1fe78;
 }
 
+/* Diseño responsivo cuando el ancho sea <= 1000px. */
 @media only screen and (max-width: 1000px){
+    /* Cambiar tamaño de letra en toda la página. */
     html, body{
         font-size: 16px;
     }
 
+    /* Cambiar el flex de la barra del encabezado. */
     #header_bar{
-        background-color: #002E6E;
         display: flow-root;
         flex-direction: row;
     }
 
+    /* Centrar el encabezado. */
     #header_bar h1{
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
 
+    /* Centrar la barra de navegación. */
     #header_bar nav{
         margin-left: auto;
         margin-right: auto;
@@ -112,10 +126,12 @@ html, body{
         padding-bottom: 25px;
     }
 
+    /* Cambiar el tamaño de los links de la barra de navegación. */
     #header_bar nav a{
         font-size: 18px;
     }
 
+    /* Encoger el botón "Salir". */
     #header_bar nav button{
         font-size: 18px;
         width: 70px;
