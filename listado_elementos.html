@@ -1,0 +1,129 @@
+<!-- 
+Desafío: Maquetado de Aplicaciones de Software
+
+Construcción de Software y Toma de Decisiones
+
+Docente: M. C. Ing. Sasha Valdés Jiménez
+
+Equipo: 
+- Jonathan Uziel Medina Rodríguez (A01255048)
+- Noah Gamaliel Rivera Nieblas (A01255351)
+
+Fecha: 25/02/2025
+
+Descripción: Página del listado de productos en un pedido de la papelería 2 Hermanos.
+-->
+
+<!DOCTYPE html>
+<html>
+    <!-- Metadatos de la página y vincular a hoja de estilos. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio | Papelería 2 Hermanos</title>
+        <link rel="stylesheet" href="styles/estilos_generales.css">
+        <link rel="stylesheet" href="styles/listado_elementos.css">
+        <script src="https://kit.fontawesome.com/231a97e579.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Encabezado y barra de navegación. -->
+        <div id="header_bar">
+            <h1>2 Hermanos</h1> 
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Productos</a>
+                <a href="#">Pedido</a>
+                
+                <!-- Cuando se implemente JavaScript, se creará la función "logout()" para cerrar sesión. -->
+                <button class="logout" onclick="logout()">Salir</button>
+            </nav>
+        </div>
+        <main>
+            <h1 class="title_page">Pedido</h1>
+            <!-- Contenedor principal del listado de elementos. -->
+            <div id="main-container">
+                <!-- En cada fila se encuentra el ID, la categoría, el nombre, el precio y la cantidad a pedir
+                     de los productos que forman parte del pedido, así como los botones para editar el producto y
+                     para borrarlo de la lista del pedido. -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="th-round-left">ID</th>
+                            <th>Categoría</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad a pedir</th>
+                            <th class="th-round-right"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LP-2526</td>
+                            <td>Escolar</td>
+                            <td>Paq. de 12 lápices de colores</td>
+                            <td>$ 15.00 MXN</td>
+                            <td>25</td>
+                            <td>
+                                <div>
+                                    <button id="boton_editar"><i class="fa-regular fa-pen-to-square fa-xl"></i></button>
+                                    <button id="boton_eliminar"><i class="fa-solid fa-trash-can fa-xl"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ST-2339</td>
+                            <td>Oficina</td>
+                            <td>Engrapadora</td>
+                            <td>$ 120.00 MXN</td>
+                            <td>35</td>
+                            <td>
+                                <div>
+                                    <button id="boton_editar"><i class="fa-regular fa-pen-to-square fa-xl"></i></button>
+                                    <button id="boton_eliminar"><i class="fa-solid fa-trash-can fa-xl"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LP-0001</td>
+                            <td>Oficina</td>
+                            <td>Paq. de 50 lápices</td>
+                            <td>$ 95.00 MXN</td>
+                            <td>45</td>
+                            <td>
+                                <div>
+                                    <button id="boton_editar"><i class="fa-regular fa-pen-to-square fa-xl"></i></button>
+                                    <button id="boton_eliminar"><i class="fa-solid fa-trash-can fa-xl"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PT-0003</td>
+                            <td>Escolar</td>
+                            <td>Paq. de 6 pinturas acrílicas</td>
+                            <td>$ 70.00 MXN</td>
+                            <td>30</td>
+                            <td>
+                                <div>
+                                    <button id="boton_editar"><i class="fa-regular fa-pen-to-square fa-xl"></i></button>
+                                    <button id="boton_eliminar"><i class="fa-solid fa-trash-can fa-xl"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="total" colspan="6">
+                                <p id="total_a_pagar"><b><u>Total a pagar:</u></b> $ <span>10,950.00</span> MXN</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Botón para añadir un producto al pedido y el desplegado del total a pagar por el pedido. -->
+                <div class="agregar">
+                    <button id="boton_agregar"><i class="fa-solid fa-circle-plus fa-xl"></i>&nbsp;&nbsp;&nbsp;Añadir producto</button>
+                </div>
+            </div>
+        </main>
+    </body>
+    <footer>
+    </footer>
+</html>
