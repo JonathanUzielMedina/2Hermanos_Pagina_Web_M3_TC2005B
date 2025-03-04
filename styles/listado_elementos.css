@@ -17,6 +17,7 @@ Descripción: Estilos de la página del listado de elementos de la aplicación w
 /* Importar fonts de Google Fonts.*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
+/* Título de la página. */
 .title_page{
     margin-top: auto;
     margin-left: auto;
@@ -27,64 +28,76 @@ Descripción: Estilos de la página del listado de elementos de la aplicación w
     border-bottom: 2px solid #000;
 }
 
+/* Contenedor principal. */
 #main-container{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Configuración general de la tabla. */
 table{
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 25px;
 }
 
+/* Encabezados de la tabla. */
 th{
     padding: 15px;
     background-color: #ffffff;
     border-bottom: 2px solid #000;
 }
 
+/* Filas impares de la tabla. */
 tr:nth-child(odd){
     padding: 10px;
     background-color: #bfbfbf;
 }
 
+/* Filas pares de la tabla. */
 tr:nth-child(even){
     background-color: #ffffff;
 }
 
+/* Columnas o divisiones de la tabla. */
 td{
     padding: 10px;
     text-align: center;
     justify-content: center;
 }
 
+/* Borde izquierdo redondo del ecabezado de la tabla. */
 .th-round-left{
     border-radius: 10px 0px 0px 0px;
 }
 
+/* Borde derecho redondo del ecabezado de la tabla. */
 .th-round-right{
     border-radius: 0px 10px 0px 0px;
 }
 
+/* Botones para editar y eliminar el producto del pedido. */
 #boton_editar, #boton_eliminar{
     background-color: #ffffff00;
     border: none;
     padding: 10px;
 }
 
+/* Hover y focus de los botones para editar y eliminar el producto del pedido. */
 #boton_editar:hover, #boton_eliminar:hover, #boton_editar:focus, #boton_eliminar:focus{
     transition: 0.3s;
     background-color: #2d2d2d65;
     border-radius: 5px;
 }
 
-#boton_editar:active:nth-child(odd), #boton_eliminar:active:nth-child(even){
+/* Diseños de los botones para editar y eliminar el producto del pedido cuando están activos. */
+#boton_editar:active, #boton_eliminar:active{
     background-color: #1a1a1ac9;
     color: #ffffff;
 }
 
+/* Última fila de la tabla que muestra el total a pagar por el pedido. */
 .total{
     background-color: #ffffff;
     color: #000000;
@@ -94,11 +107,13 @@ td{
     padding: 1px;
 }
 
+/* División que incluye el botón "Agregar producto". */
 .agregar{
     display: flex;
     padding-bottom: 30px;
 }
 
+/* Botón "Agregar producto". */
 #boton_agregar{
     margin-left: auto;
     margin-right: 0;
@@ -111,11 +126,13 @@ td{
     font-size: 18px;
 }
 
+/* Hover y focus del botón "Agregar producto". */
 #boton_agregar:hover, #boton_agregar:focus{
     transition: 0.3s ease-out;
     background-color: #82ff55;
 }
 
+/* Diseño del botón "Agregar producto" cuando está activo. */
 #boton_agregar:active{
     background-color: #000000;
     color: #ffffff;
