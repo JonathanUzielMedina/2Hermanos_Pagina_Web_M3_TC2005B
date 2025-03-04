@@ -26,6 +26,7 @@ html, body{
     font-size: 18px;
 }
 
+
 /* Barra de encabezado. */
 #header_bar{
     width: 100%;
@@ -96,6 +97,17 @@ html, body{
     transition: 0.00001s;
     color: #000000;
     background-color: #f1fe78;
+}
+
+/* Título de la página. */
+.title_page{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 2px solid #000;
 }
 
 /* Diseño responsivo cuando el ancho sea <= 1000px. */
