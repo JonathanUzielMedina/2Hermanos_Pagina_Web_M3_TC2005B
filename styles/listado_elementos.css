@@ -1,0 +1,132 @@
+/* 
+Desafío: Maquetado de Aplicaciones de Software
+
+Construcción de Software y Toma de Decisiones
+
+Docente: M. C. Ing. Sasha Valdés Jiménez
+
+Equipo: 
+- Jonathan Uziel Medina Rodríguez (A01255048)
+- Noah Gamaliel Rivera Nieblas (A01255351)
+
+Fecha: 04/03/2025
+
+Descripción: Estilos de la página del listado de elementos de la aplicación web de 2 Hermanos.
+*/
+
+/* Importar fonts de Google Fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+.title_page{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+#main-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+th{
+    padding: 15px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #000;
+}
+
+tr:nth-child(odd){
+    padding: 10px;
+    background-color: #bfbfbf;
+}
+
+tr:nth-child(even){
+    background-color: #ffffff;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.th-round-left{
+    border-radius: 10px 0px 0px 0px;
+}
+
+.th-round-right{
+    border-radius: 0px 10px 0px 0px;
+}
+
+#boton_editar, #boton_eliminar{
+    background-color: #ffffff00;
+    border: none;
+    padding: 10px;
+}
+
+#boton_editar:hover, #boton_eliminar:hover, #boton_editar:focus, #boton_eliminar:focus{
+    transition: 0.3s;
+    background-color: #2d2d2d65;
+    border-radius: 5px;
+}
+
+#boton_editar:active:nth-child(odd), #boton_eliminar:active:nth-child(even){
+    background-color: #1a1a1ac9;
+    color: #ffffff;
+}
+
+.total{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    border-top: 2px solid #000000;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1px;
+}
+
+.agregar{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+#boton_agregar{
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 38px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #c2ffa8;
+    font-size: 18px;
+}
+
+#boton_agregar:hover, #boton_agregar:focus{
+    transition: 0.3s ease-out;
+    background-color: #82ff55;
+}
+
+#boton_agregar:active{
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+@media only screen and (max-width: 1000px){
+    #boton_agregar{
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+}
