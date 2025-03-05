@@ -1,0 +1,158 @@
+/* 
+Desafío: Maquetado de Aplicaciones de Software
+
+Construcción de Software y Toma de Decisiones
+
+Docente: M. C. Ing. Sasha Valdés Jiménez
+
+Equipo: 
+- Jonathan Uziel Medina Rodríguez (A01255048)
+- Noah Gamaliel Rivera Nieblas (A01255351)
+
+Fecha: 04/03/2025
+
+Descripción: Estilos de la página de adicionar elementos de la aplicación web de 2 Hermanos.
+*/
+
+/* Importar fonts de Google Fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Formulario que incluye las entradas de texto y de la imagen del producto. */
+form {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulo del formulario. */
+h2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Contenedor principal del formulario */
+.form-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Imagen más grande y centrada */
+.image_input_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.image_input_box img {
+    width: 120px;  
+    height: 120px;
+    object-fit: cover; 
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+/* Ajuste del botón de cargar imagen. */
+#image_button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px 12px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Figtree', sans-serif;
+    font-size: 18px;
+}
+
+/* Hover del botón de cargar imagen. */
+#image_button:hover, #image_button:focus {
+    background-color: #bfbfbf;
+}
+
+/* Botón de cargar imagen activo. */
+#image_button:active {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Organización en dos columnas */
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    flex: 2;
+    min-width: 300px;
+}
+
+/* Espaciado entre los campos */
+.form-group input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;  
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000000;
+    font-family: 'Figtree', sans-serif;
+    font-size: 18px;
+}
+
+/* Mantener botones de operación alineados en su posición */
+#operation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Botones de operación (guardar y cancelar). */
+#operation-buttons button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+/* Hover y focus de botones de operación (guardar y cancelar). */
+#operation-buttons button:hover, #operation-buttons button:focus {
+    background-color: #bfbfbf;
+}
+
+/* Botones de operación (guardar y cancelar) activos. */
+#operation-buttons button:active {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .form-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        grid-template-columns: 1fr;
+    }
+
+    .image_input_box {
+        width: 150px;
+    }
+}
