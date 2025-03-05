@@ -1,0 +1,58 @@
+/* 
+Desafío: Maquetado de Aplicaciones de Software
+
+Construcción de Software y Toma de Decisiones
+
+Docente: M. C. Ing. Sasha Valdés Jiménez
+
+Equipo: 
+- Jonathan Uziel Medina Rodríguez (A01255048)
+- Noah Gamaliel Rivera Nieblas (A01255351)
+
+Fecha: 04/03/2025
+
+Descripción: Estilos de la página de inicio de la aplicación de la papelería 2 Hermanos.
+             Estos estilos son provisionales por el momento.
+*/
+
+/* Importar fonts de Google Fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Artículo de la página. */
+article{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+}
+
+/* Subtítulo. */
+h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Párrafos. */
+p{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+/* Enlaces de la página. */
+a{
+    color: #002e6e;
+}
+
+/* Hover y focus de los enlaces de la página. */
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+/* Enlaces de la página activos. */
+a:active{
+    color: #ff0000;
+}
