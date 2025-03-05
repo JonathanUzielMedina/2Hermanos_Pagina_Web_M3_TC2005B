@@ -1,0 +1,82 @@
+<!-- 
+Desafío: Maquetado de Aplicaciones de Software
+
+Construcción de Software y Toma de Decisiones
+
+Docente: M. C. Ing. Sasha Valdés Jiménez
+
+Equipo: 
+- Jonathan Uziel Medina Rodríguez (A01255048)
+- Noah Gamaliel Rivera Nieblas (A01255351)
+
+Fecha: 04/03/2025
+
+Descripción: Página donde se adiciona un producto en la aplicación web de la papelería 2 Hermanos.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Metadatos de la página y vincular a hoja de estilos. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Añadir Producto | Papelería 2 Hermanos</title>
+        <link rel="stylesheet" href="styles/estilos_generales.css">
+        <link rel="stylesheet" href="styles/adicionar_elemento.css">
+        <script src="https://kit.fontawesome.com/231a97e579.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Encabezado y barra de navegación. -->
+        <div id="header_bar">
+            <h1>2 Hermanos</h1> 
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Productos</a>
+                <a href="#">Pedido</a>
+                
+                <!-- Cuando se implemente JavaScript, se creará la función "logout()" para cerrar sesión. -->
+                <button class="logout" onclick="logout()">Salir</button>
+            </nav>
+        </div>
+        <main>
+            <h1 class="title_page">Productos</h1>
+    
+            <!-- Contenedor del formulario -->
+            <section class="form-container">
+                <h2>Añadir un Nuevo Producto</h2>
+                
+                <form>
+                    <div class="form-box">
+                        <!-- Carga de imagen -->
+                        <div id="image_input">
+                            <label><strong> Imagen</strong></label>
+                            <div class="image_input_box">
+                                <i class="fa-solid fa-image fa-3x"></i>
+                                <button id="image_button"><i class="fa-solid fa-paperclip"></i> Cargar imagen</button>
+                            </div>
+                        </div>
+    
+                         <!-- Campos del formulario -->
+                          <div class="form-group">
+                            <input type="text" placeholder="ID del producto">
+                            <input type="text" placeholder="Código de barras">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Categoría">
+                            <input type="number" placeholder="Cantidad de artículos">
+                            <input type="number" placeholder="Costo sin IVA">
+                            <input type="number" placeholder="Precio de venta">
+                        </div>
+                    </div>
+                    </div>
+    
+                    <!-- Botones de acción -->
+                    <div id="operation-buttons">
+                        <button type="submit"><i class="fa-solid fa-floppy-disk fa-xl"></i>&nbsp;&nbsp;Guardar</button>
+                        <button type="reset"><i class="fa-solid fa-xmark fa-xl"></i>&nbsp;&nbsp;Cancelar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+    <footer></footer>
+    </html>
