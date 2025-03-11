@@ -1,0 +1,168 @@
+/* 
+Desafío: Maquetado de Aplicaciones de Software
+
+Construcción de Software y Toma de Decisiones
+
+Docente: M. C. Ing. Sasha Valdés Jiménez
+
+Equipo: 
+- Jonathan Uziel Medina Rodríguez (A01255048)
+- Noah Gamaliel Rivera Nieblas (A01255351)
+
+Fecha: 11/03/2025
+
+Descripción: Estilos generales de la aplicación web de 2 Hermanos.
+*/
+
+/* Importar fonts de Google Fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Configuración general de la página: márgenes, tamaño de caja, color del fondo y el tipo y tamaño de letra por defecto. */
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #a1d3fe;
+    font-family: 'Figtree', sans-serif;
+    font-size: 18px;
+}
+
+/* Título de la página. */
+.title_page{
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+/* Barra de encabezado. */
+#header_bar{
+    background-color: #002E6E;
+}
+
+/* Encabezado con el nombre de la empresa. */
+#header_bar h1{
+    color: #ffffff;
+    font-family: 'Instrument Sans', sans-serif;
+    font-style: italic;
+}
+
+/* Barra de navegación. */
+#header_bar nav{
+    color: #ffffff;
+}
+
+/* Enlaces dentro de la barra de navegación. */
+#header_bar nav a{
+    color: #ffffff;
+    font-family: 'Figtree', sans-serif;
+    text-decoration: none;
+}
+
+/* Hover y focus de los enlaces de la barra de navegación. */
+#header_bar nav a:hover, #header_bar nav a:focus{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Diseño de enlaces activos en la barra de navegación. */
+#header_bar nav a:active{
+    color: #95cdfd;
+}
+
+/* Diseño del botón "Salir". */
+#header_bar nav button{
+    color: #004DB9;
+    background-color: #ffffff;
+    font-family: 'Figtree', sans-serif;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 10px;
+}
+
+/* Hover y focus del botón "Salir". */
+#header_bar nav button:hover, #header_bar nav button:focus{
+    transition: 0.3s;
+    color: #000000;
+    background-color: #57B1FF;
+}
+
+/* Diseño de botón "Salir" activo. */
+#header_bar nav button:active{
+    transition: 0.00001s;
+    color: #000000;
+    background-color: #f1fe78;
+}
+
+/* Diseño responsivo cuando el ancho sea <= 1000px. */
+@media only screen and (max-width: 1000px){
+    /* Cambiar tamaño de letra en toda la página. */
+    html, body{
+        font-size: 16px;
+    }
+
+    body{
+        padding-top: 100px;
+    }
+
+    /* Cambiar el flex de la barra del encabezado. */
+    #header_bar{
+        display: flow-root;
+        flex-direction: row;
+    }
+
+    /* Centrar el encabezado. */
+    #header_bar h1{
+        padding-top: 10px;
+    }
+
+    /* Centrar la barra de navegación. */
+    #header_bar nav{
+        text-align: center;
+        margin-right: 0px;
+        padding-bottom: 15px;
+    }
+
+    /* Cambiar el tamaño de los links de la barra de navegación. */
+    #header_bar nav a{
+        font-size: 18px;
+        margin-right: 1rem; 
+    }
+
+    /* Encoger el botón "Salir". */
+    #header_bar nav button{
+        font-size: 18px;
+        width: 70px;
+        height: 30px;
+    }
+}
+
+/* Diseño responsivo cuando el ancho sea > 1000px. */
+@media only screen and (min-width: 1001px){
+    /* Encabezado con el nombre de la empresa. */
+    #header_bar h1{
+        margin-left: 105px;
+    }
+
+    /* Barra de navegación. */
+    #header_bar nav{
+        margin-right: 105px;
+    }
+
+    /* Enlaces dentro de la barra de navegación. */
+    #header_bar nav a{
+        font-size: 20px;
+        margin-right: 4rem;
+    }
+
+    /* Diseño del botón "Salir". */
+    #header_bar nav button{
+        font-size: 20px;
+        width: 90px;
+        height: 40px;
+    }
+}
+
+/* Footer de la página. */
+footer{
+    background-color: #002E6E;
+    color: #ffffff;
+}
