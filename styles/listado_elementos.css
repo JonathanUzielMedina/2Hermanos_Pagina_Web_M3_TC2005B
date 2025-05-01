@@ -9,7 +9,7 @@ Equipo:
 - Jonathan Uziel Medina Rodríguez (A01255048)
 - Noah Gamaliel Rivera Nieblas (A01255351)
 
-Fecha: 04/03/2025
+Fecha: 11/03/2025
 
 Descripción: Estilos de la página del listado de elementos de la aplicación web de 2 Hermanos.
 */
@@ -22,13 +22,6 @@ Descripción: Estilos de la página del listado de elementos de la aplicación w
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Configuración general de la tabla. */
-table{
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 25px;
 }
 
 /* Encabezados de la tabla. */
@@ -52,8 +45,6 @@ tr:nth-child(even){
 /* Columnas o divisiones de la tabla. */
 td{
     padding: 10px;
-    text-align: center;
-    justify-content: center;
 }
 
 /* Borde izquierdo redondo del ecabezado de la tabla. */
@@ -90,22 +81,22 @@ td{
 .total{
     background-color: #ffffff;
     color: #000000;
-    text-align: center;
     border-top: 2px solid #000000;
     border-radius: 0px 0px 10px 10px;
-    padding: 1px;
+}
+
+/* Enunciado con el total a pagar. */
+#total_a_pagar{
+    padding-top: 15px;
 }
 
 /* División que incluye el botón "Agregar producto". */
 .agregar{
-    display: flex;
     padding-bottom: 30px;
 }
 
 /* Botón "Agregar producto". */
 #boton_agregar{
-    margin-left: auto;
-    margin-right: 0;
     padding-left: 10px;
     padding-right: 10px;
     height: 38px;
@@ -113,6 +104,11 @@ td{
     border-radius: 10px;
     background-color: #c2ffa8;
     font-size: 18px;
+}
+
+/* Ícono del botón "Añadir producto". */
+.btn-icon{
+    padding-right: 5px;
 }
 
 /* Hover y focus del botón "Agregar producto". */
@@ -128,11 +124,28 @@ td{
     border: 2px solid #ffffff;
 }
 
+/* Responsividad de la pantalla. */
 @media only screen and (max-width: 1000px){
+    /* Cambiar tamaño del botón "Añadir producto". */
     #boton_agregar{
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 10px;
         font-size: 16px;
+    }
+
+    table{
+        font-size: 13px;
+    }
+
+    /* Botón "Agregar producto". */
+    #boton_agregar{
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        background-color: #c2ffa8;
+        font-size: 14px;
     }
 }

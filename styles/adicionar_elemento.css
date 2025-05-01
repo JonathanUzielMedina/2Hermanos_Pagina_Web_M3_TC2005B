@@ -9,7 +9,7 @@ Equipo:
 - Jonathan Uziel Medina Rodríguez (A01255048)
 - Noah Gamaliel Rivera Nieblas (A01255351)
 
-Fecha: 04/03/2025
+Fecha: 11/03/2025
 
 Descripción: Estilos de la página de adicionar elementos de la aplicación web de 2 Hermanos.
 */
@@ -40,7 +40,7 @@ label {
     text-align: center;
 }
 
-/* Contenedor principal del formulario */
+/* Contenedor principal del formulario. */
 .form-box {
     display: flex;
     flex-wrap: wrap;
@@ -49,13 +49,8 @@ label {
     gap: 20px;
 }
 
-/* Imagen más grande y centrada */
+/* Imagen más grande y centrada. */
 .image_input_box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; 
     border: 2px solid #000000;
     border-radius: 10px;
 }
@@ -112,22 +107,17 @@ label {
     min-width: 300px;
 }
 
-/* Espaciado entre los campos */
+/* Espaciado entre los campos. */
 .form-group input {
     width: 90%;
     padding: 12px;
     margin: 8px 0;  
+    gap: 200px;
     border: 1px solid #000;
     border-radius: 5px;
     color: #000000;
     font-family: 'Figtree', sans-serif;
     font-size: 18px;
-}
-
-/* Mantener botones de operación alineados en su posición */
-#operation-buttons {
-    text-align: center;
-    margin-top: 20px;
 }
 
 /* Botones de operación (guardar y cancelar). */
@@ -139,7 +129,6 @@ label {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin: 5px;
 }
 
 /* Hover y focus de botones de operación (guardar y cancelar). */
@@ -156,6 +145,11 @@ label {
 
 /* Diseño responsivo */
 @media (max-width: 768px) {
+
+    label{
+        font-size: 16px;
+    }
+
     .form-box {
         flex-direction: column;
         align-items: center;

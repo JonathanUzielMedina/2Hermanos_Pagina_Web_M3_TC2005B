@@ -9,7 +9,7 @@ Equipo:
 - Jonathan Uziel Medina Rodríguez (A01255048)
 - Noah Gamaliel Rivera Nieblas (A01255351)
 
-Fecha: 04/03/2025
+Fecha: 11/03/2025
 
 Descripción: Estilos generales de la aplicación web de 2 Hermanos.
 */
@@ -26,19 +26,20 @@ html, body{
     font-size: 18px;
 }
 
+/* Título de la página. */
+.title_page{
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
 
 /* Barra de encabezado. */
 #header_bar{
-    width: 100%;
     background-color: #002E6E;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
 }
 
 /* Encabezado con el nombre de la empresa. */
 #header_bar h1{
-    margin-left: 105px;
     color: #ffffff;
     font-family: 'Instrument Sans', sans-serif;
     font-style: italic;
@@ -46,9 +47,6 @@ html, body{
 
 /* Barra de navegación. */
 #header_bar nav{
-    align-self: center;
-    position: relative;
-    margin-right: 105px;
     color: #ffffff;
 }
 
@@ -56,9 +54,7 @@ html, body{
 #header_bar nav a{
     color: #ffffff;
     font-family: 'Figtree', sans-serif;
-    font-size: 20px;
     text-decoration: none;
-    margin-right: 4rem;
 }
 
 /* Hover y focus de los enlaces de la barra de navegación. */
@@ -77,9 +73,6 @@ html, body{
     color: #004DB9;
     background-color: #ffffff;
     font-family: 'Figtree', sans-serif;
-    font-size: 20px;
-    width: 90px;
-    height: 40px;
     text-decoration: none;
     border: 0px;
     border-radius: 10px;
@@ -99,22 +92,15 @@ html, body{
     background-color: #f1fe78;
 }
 
-/* Título de la página. */
-.title_page{
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    line-height: 100px;
-    text-align: center;
-    border-bottom: 2px solid #000;
-}
-
 /* Diseño responsivo cuando el ancho sea <= 1000px. */
 @media only screen and (max-width: 1000px){
     /* Cambiar tamaño de letra en toda la página. */
     html, body{
         font-size: 16px;
+    }
+
+    body{
+        padding-top: 100px;
     }
 
     /* Cambiar el flex de la barra del encabezado. */
@@ -125,22 +111,20 @@ html, body{
 
     /* Centrar el encabezado. */
     #header_bar h1{
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+        padding-top: 10px;
     }
 
     /* Centrar la barra de navegación. */
     #header_bar nav{
-        margin-left: auto;
-        margin-right: auto;
         text-align: center;
-        padding-bottom: 25px;
+        margin-right: 0px;
+        padding-bottom: 15px;
     }
 
     /* Cambiar el tamaño de los links de la barra de navegación. */
     #header_bar nav a{
         font-size: 18px;
+        margin-right: 1rem; 
     }
 
     /* Encoger el botón "Salir". */
@@ -149,4 +133,36 @@ html, body{
         width: 70px;
         height: 30px;
     }
+}
+
+/* Diseño responsivo cuando el ancho sea > 1000px. */
+@media only screen and (min-width: 1001px){
+    /* Encabezado con el nombre de la empresa. */
+    #header_bar h1{
+        margin-left: 105px;
+    }
+
+    /* Barra de navegación. */
+    #header_bar nav{
+        margin-right: 105px;
+    }
+
+    /* Enlaces dentro de la barra de navegación. */
+    #header_bar nav a{
+        font-size: 20px;
+        margin-right: 4rem;
+    }
+
+    /* Diseño del botón "Salir". */
+    #header_bar nav button{
+        font-size: 20px;
+        width: 90px;
+        height: 40px;
+    }
+}
+
+/* Footer de la página. */
+footer{
+    background-color: #002E6E;
+    color: #ffffff;
 }
